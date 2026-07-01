@@ -454,6 +454,10 @@ input[type="range"] {
   font: inherit;
   font-weight: 900;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .back-button {
