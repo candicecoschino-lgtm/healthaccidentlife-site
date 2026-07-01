@@ -243,14 +243,17 @@ a {
 }
 
 .choice-card {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 64px;
   border: 2px solid var(--border);
   border-radius: 12px;
   padding: 16px 18px;
   cursor: pointer;
   background: #fbfdff;
+  text-align: center;
   transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
@@ -260,17 +263,19 @@ a {
 }
 
 .choice-card input {
-  margin: 0 12px 0 0;
-  accent-color: var(--blue);
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .choice-card span {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .choice-card:has(input:checked) {
   border-color: var(--blue);
   background: #eef6ff;
+  box-shadow: 0 0 0 4px rgba(61, 120, 184, 0.08);
 }
 
 .field-group {
@@ -382,6 +387,7 @@ input[type="range"] {
   width: auto;
   min-height: auto;
   margin-top: 4px;
+  accent-color: var(--blue);
 }
 
 .consent-box a {
