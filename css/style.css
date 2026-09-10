@@ -1964,3 +1964,17 @@ select:hover {
   min-height: auto;
   text-align: left;
 }
+/* COVERAGE SECTION POLISH */
+
+.coverage-item {
+  min-height: 285px;
+  padding: 34px 24px;
+}
+
+.coverage-item h3 {
+  margin-top: 44px;
+}
+
+.coverage-item p {
+  line-height: 1.65;
+}
