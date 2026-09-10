@@ -4,62 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Health Accident Life | Free Coverage Review</title>
+  <title>Health Accident Life | Find Coverage That Fits</title>
 
   <meta
     name="description"
-    content="Compare health, life, accident, dental, vision, and supplemental coverage options with help from a licensed insurance advisor."
+    content="Get help comparing health, life, accident, dental, vision, and supplemental insurance options with a licensed advisor."
   />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
+
       <a href="index.html" class="brand-link" aria-label="Health Accident Life home">
-        <img src="images/logo.png" alt="Health Accident Life logo" class="site-logo" />
+        <img src="images/logo.png" alt="Health Accident Life" class="site-logo" />
       </a>
 
-      <div class="header-trust">
-        <p>Health, Life & Supplemental Coverage</p>
-        <span>Licensed in 50 States | Multiple Carrier Options</span>
-      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#coverage-options">Coverage Options</a>
+        <a href="#about">Why HAL</a>
+      </nav>
+
+      <a class="header-phone" href="tel:3139440576">
+        <span>Talk to a licensed advisor</span>
+        <strong>(313) 944-0576</strong>
+      </a>
+
     </div>
   </header>
 
+
   <main>
+
+    <!-- HERO -->
+
     <section class="hero-section">
-      <div class="container hero-content">
-        <p class="eyebrow">Free licensed coverage review</p>
 
-        <h1>Insurance Options Without the Guesswork</h1>
+      <div class="hero-grid-pattern"></div>
 
-        <p class="hero-subtitle">
-          Compare health, life, accident, dental, vision, and supplemental coverage options with help from a licensed insurance advisor.
-        </p>
+      <div class="container hero-layout">
 
-        <div class="trust-row" aria-label="Coverage review benefits">
-          <span>Health, life & supplemental options</span>
-          <span>Accident, dental & vision available</span>
-          <span>Licensed advisor support</span>
-          <span>No-cost coverage review</span>
+        <div class="hero-copy">
+
+          <p class="eyebrow">Independent insurance guidance</p>
+
+          <h1>
+            Insurance is complicated.
+            <span>Finding the right coverage shouldn't be.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Tell us what you need and we'll help you make sense of the options.
+            Compare health, life, accident, dental, vision, and supplemental coverage
+            with help from a licensed insurance advisor.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#coverage-review" class="hero-button">
+              Start My Free Coverage Review
+            </a>
+
+            <a href="tel:3139440576" class="hero-phone-link">
+              Or call (313) 944-0576
+            </a>
+          </div>
+
+          <div class="hero-trust">
+
+            <div>
+              <strong>50</strong>
+              <span>States Licensed</span>
+            </div>
+
+            <div>
+              <strong>$0</strong>
+              <span>Cost for Your Review</span>
+            </div>
+
+            <div>
+              <strong>Multiple</strong>
+              <span>Coverage Options</span>
+            </div>
+
+          </div>
+
         </div>
+
+
+        <aside class="hero-side-panel">
+
+          <p class="panel-label">We can help with</p>
+
+          <ul class="coverage-checklist">
+            <li>Individual & family health insurance</li>
+            <li>ACA Marketplace coverage</li>
+            <li>Life insurance</li>
+            <li>Accident & supplemental protection</li>
+            <li>Dental & vision coverage</li>
+            <li>Alternative health coverage options</li>
+          </ul>
+
+          <div class="panel-callout">
+            <strong>Not sure what you need?</strong>
+            <span>That's exactly what the coverage review is for.</span>
+          </div>
+
+        </aside>
+
       </div>
     </section>
 
+
+    <!-- FORM -->
+
     <section class="form-section" id="coverage-review">
-      <div class="container">
-    <form class="quote-card" id="quoteForm" name="coverage-review" method="POST" netlify data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
+
+      <div class="container form-layout">
+
+        <div class="form-intro">
+
+          <p class="eyebrow dark">Let's narrow it down</p>
+
+          <h2>A few questions. Better options.</h2>
+
+          <p>
+            Insurance isn't one-size-fits-all. Answer a few quick questions so we
+            can better understand your household, budget, and coverage priorities.
+          </p>
+
+          <div class="form-benefits">
+            <span>No obligation</span>
+            <span>No cost to you</span>
+            <span>Licensed advisor support</span>
+          </div>
+
+        </div>
+
+
+        <form
+          class="quote-card"
+          id="quoteForm"
+          name="coverage-review"
+          method="POST"
+          netlify
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you/"
+        >
+
           <input type="hidden" name="form-name" value="coverage-review" />
-       <p class="hidden-field">
-  <label>
-    Do not fill this out if you are human:
-    <input name="bot-field" />
-  </label>
-</p>
+
+          <p class="hidden-field">
+            <label>
+              Do not fill this out if you are human:
+              <input name="bot-field" />
+            </label>
+          </p>
+
 
           <div class="form-topbar">
+
             <div>
               <p id="stepCounter">Step 1 of 8</p>
               <h2 id="stepTitle">Coverage Type</h2>
@@ -70,14 +178,24 @@
                 <div class="progress-fill" id="progressFill"></div>
               </div>
             </div>
+
           </div>
 
+
           <div class="form-body">
+
+            <!-- STEP 1 -->
+
             <section class="form-step active" data-step="1">
+
               <h3>What type of coverage are you looking for?</h3>
-              <p class="step-help">Select all that apply. This helps match you with the right coverage options.</p>
+
+              <p class="step-help">
+                Select all that apply. If you're not sure, that's completely fine.
+              </p>
 
               <div class="choice-grid two-column">
+
                 <label class="choice-card">
                   <input type="checkbox" name="coverage_type" value="Health Insurance" />
                   <span>Health Insurance</span>
@@ -105,16 +223,26 @@
 
                 <label class="choice-card">
                   <input type="checkbox" name="coverage_type" value="Not Sure" />
-                  <span>Not sure, help me figure it out</span>
+                  <span>I'm Not Sure Yet</span>
                 </label>
+
               </div>
+
             </section>
 
+
+            <!-- STEP 2 -->
+
             <section class="form-step" data-step="2">
+
               <h3>Who needs coverage?</h3>
-              <p class="step-help">This helps identify coverage options for your household.</p>
+
+              <p class="step-help">
+                Tell us who we're shopping for.
+              </p>
 
               <div class="choice-list">
+
                 <label class="choice-card">
                   <input type="radio" name="who_needs_coverage" value="Just me" />
                   <span>Just me</span>
@@ -134,20 +262,37 @@
                   <input type="radio" name="who_needs_coverage" value="Me + spouse + children" />
                   <span>Me + spouse + children</span>
                 </label>
+
               </div>
+
             </section>
 
+
+            <!-- STEP 3 -->
+
             <section class="form-step" data-step="3">
+
               <h3>What are the ages of those who need coverage?</h3>
-              <p class="step-help">Age can affect plan pricing, eligibility, and available options.</p>
+
+              <p class="step-help">
+                Age can affect eligibility, pricing, and available options.
+              </p>
 
               <div class="field-group">
                 <label for="yourAge">Your Age</label>
-                <input type="number" id="yourAge" name="your_age" placeholder="Example: 35" min="0" max="120" />
+                <input
+                  type="number"
+                  id="yourAge"
+                  name="your_age"
+                  placeholder="Example: 35"
+                  min="0"
+                  max="120"
+                />
               </div>
 
               <div class="field-group optional-field">
                 <label for="householdAges">Other Household Ages</label>
+
                 <input
                   type="text"
                   id="householdAges"
@@ -155,21 +300,40 @@
                   placeholder="Example: 34, 12, 9"
                 />
               </div>
+
             </section>
 
+
+            <!-- STEP 4 -->
+
             <section class="form-step" data-step="4">
-              <h3>What is your ZIP code?</h3>
-              <p class="step-help">Plan availability and pricing can vary by location.</p>
+
+              <h3>Where do you live?</h3>
+
+              <p class="step-help">
+                Insurance availability can vary significantly by location.
+              </p>
 
               <div class="field-group">
                 <label for="zipCode">ZIP Code</label>
-                <input type="text" id="zipCode" name="zip_code" placeholder="Example: 48439" maxlength="10" />
+
+                <input
+                  type="text"
+                  id="zipCode"
+                  name="zip_code"
+                  placeholder="Example: 48439"
+                  maxlength="10"
+                />
               </div>
 
               <div class="field-group">
+
                 <label for="state">State</label>
+
                 <select id="state" name="state">
+
                   <option value="">Select your state</option>
+
                   <option value="Alabama">Alabama</option>
                   <option value="Alaska">Alaska</option>
                   <option value="Arizona">Arizona</option>
@@ -220,19 +384,30 @@
                   <option value="West Virginia">West Virginia</option>
                   <option value="Wisconsin">Wisconsin</option>
                   <option value="Wyoming">Wyoming</option>
+
                 </select>
+
               </div>
+
             </section>
 
+
+            <!-- STEP 5 -->
+
             <section class="form-step" data-step="5">
-              <h3>What is your estimated annual household income?</h3>
-              <p class="step-help">Income may help determine whether savings or other coverage options are available.</p>
+
+              <h3>What's your estimated annual household income?</h3>
+
+              <p class="step-help">
+                This can help determine eligibility for certain savings and coverage options.
+              </p>
 
               <div class="income-display">
                 <span id="incomeValue">$35,000</span>
               </div>
 
               <div class="field-group">
+
                 <input
                   type="range"
                   id="annualIncome"
@@ -244,14 +419,19 @@
                 />
 
                 <div class="range-labels">
-                  <span>$10,000</span>
-                  <span>$75,000</span>
-                  <span>$150,000+</span>
+                  <span>$10K</span>
+                  <span>$75K</span>
+                  <span>$150K+</span>
                 </div>
+
               </div>
 
               <div class="field-group">
-                <label for="householdSize">Household size, including yourself</label>
+
+                <label for="householdSize">
+                  Household size, including yourself
+                </label>
+
                 <select id="householdSize" name="household_size">
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -260,46 +440,66 @@
                   <option value="5">5</option>
                   <option value="6+">6+</option>
                 </select>
+
               </div>
+
             </section>
 
+
+            <!-- STEP 6 -->
+
             <section class="form-step" data-step="6">
-              <h3>Are you currently insured?</h3>
-              <p class="step-help">This helps identify possible coverage options and next steps.</p>
+
+              <h3>What's your current coverage situation?</h3>
+
+              <p class="step-help">
+                This helps us better understand what you may be trying to replace or improve.
+              </p>
 
               <div class="choice-list">
+
                 <label class="choice-card">
                   <input type="radio" name="current_coverage" value="No, I have no coverage right now" />
-                  <span>No, I have no coverage right now</span>
+                  <span>I don't currently have coverage</span>
                 </label>
 
                 <label class="choice-card">
                   <input type="radio" name="current_coverage" value="Yes, but it costs too much" />
-                  <span>Yes, but it costs too much</span>
+                  <span>I have coverage, but it's too expensive</span>
                 </label>
 
                 <label class="choice-card">
                   <input type="radio" name="current_coverage" value="Yes, through COBRA" />
-                  <span>Yes, through COBRA</span>
+                  <span>I'm currently on COBRA</span>
                 </label>
 
                 <label class="choice-card">
                   <input type="radio" name="current_coverage" value="Yes, I bought my own plan" />
-                  <span>Yes, I bought my own plan</span>
+                  <span>I purchased my own plan</span>
                 </label>
 
                 <label class="choice-card">
                   <input type="radio" name="current_coverage" value="I recently lost job-based coverage" />
-                  <span>I recently lost job-based coverage</span>
+                  <span>I recently lost employer coverage</span>
                 </label>
+
               </div>
+
             </section>
 
+
+            <!-- STEP 7 -->
+
             <section class="form-step" data-step="7">
-              <h3>How often do you typically use healthcare?</h3>
-              <p class="step-help">This helps balance premium, deductible, prescriptions, and out-of-pocket needs.</p>
+
+              <h3>How do you typically use healthcare?</h3>
+
+              <p class="step-help">
+                This helps us think beyond just the monthly premium.
+              </p>
 
               <div class="choice-list">
+
                 <label class="choice-card">
                   <input type="radio" name="healthcare_usage" value="Rarely, mostly for emergencies" />
                   <span>Rarely, mostly for emergencies</span>
@@ -314,161 +514,445 @@
                   <input type="radio" name="healthcare_usage" value="Regularly, I have ongoing needs" />
                   <span>Regularly, I have ongoing needs</span>
                 </label>
+
               </div>
 
-              <div class="field-group">
-                <label for="planPriority">What matters most to you in a plan?</label>
+              <div class="field-group priority-field">
+
+                <label for="planPriority">
+                  What's most important to you?
+                </label>
+
                 <select id="planPriority" name="plan_priority">
-                  <option value="">Select</option>
+                  <option value="">Choose your top priority</option>
                   <option value="Low monthly premium">Low monthly premium</option>
                   <option value="Low deductible">Low deductible</option>
                   <option value="Keep my current doctors">Keep my current doctors</option>
                   <option value="Low copays for visits">Low copays for visits</option>
-                  <option value="Good prescription coverage">Good prescription coverage</option>
-                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Good prescription coverage">Prescription coverage</option>
+                  <option value="Not sure yet">I'm not sure yet</option>
                 </select>
+
               </div>
+
             </section>
+
+
+            <!-- STEP 8 -->
 
             <section class="form-step" data-step="8">
+
               <div class="results-box">
-                <p class="results-label">Your coverage review is ready to send</p>
-                <h3>Coverage options may be available in your area</h3>
+
+                <p class="results-label">Almost done</p>
+
+                <h3>Let's review your coverage options.</h3>
+
+                <p>
+                  You've given us the information needed to start narrowing down
+                  coverage that may fit your situation.
+                </p>
 
                 <ul>
-                  <li>Based on your answers, you may qualify for savings or coverage options.</li>
-                  <li>Multiple carrier options may be available depending on your location and eligibility.</li>
-                  <li>A licensed advisor can walk you through your options at no cost.</li>
+                  <li>Review options based on your location and needs</li>
+                  <li>Compare potential costs and benefits</li>
+                  <li>Ask questions before making a decision</li>
                 </ul>
+
               </div>
 
-              <h3>Where should we send your results?</h3>
-              <p class="step-help">Submit your information and a licensed advisor will reach out to review your options.</p>
+              <h3>Where can we reach you?</h3>
+
+              <p class="step-help">
+                A licensed insurance advisor will contact you to review available options.
+              </p>
+
 
               <div class="field-group">
+
                 <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="full_name" placeholder="Your full name" />
+
+                <input
+                  type="text"
+                  id="fullName"
+                  name="full_name"
+                  placeholder="Your full name"
+                />
+
               </div>
+
 
               <div class="field-row">
+
                 <div class="field-group">
+
                   <label for="phoneNumber">Phone Number</label>
-                  <input type="tel" id="phoneNumber" name="phone_number" placeholder="(555) 555-5555" />
+
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phone_number"
+                    placeholder="(555) 555-5555"
+                  />
+
                 </div>
 
                 <div class="field-group">
+
                   <label for="emailAddress">Email Address</label>
-                  <input type="email" id="emailAddress" name="email_address" placeholder="you@email.com" />
+
+                  <input
+                    type="email"
+                    id="emailAddress"
+                    name="email_address"
+                    placeholder="you@email.com"
+                  />
+
                 </div>
+
               </div>
 
+
               <label class="consent-box">
-                <input type="checkbox" name="tcpa_consent" value="Yes" required />
+
+                <input
+                  type="checkbox"
+                  name="tcpa_consent"
+                  value="Yes"
+                  required
+                />
+
                 <span>
-                  By checking this box and submitting this form, I provide my express written consent to Health Accident Life and its licensed insurance agents to contact me at the phone number and email address provided, including through automated telephone dialing systems, pre-recorded messages, and text messages, regarding insurance products and services. I understand that my consent is not a condition of purchase and that I may revoke consent at any time. Message and data rates may apply. Reply STOP to opt out of text messages. View our <a href="privacy.html">Privacy Policy</a>.
+                  By checking this box and submitting this form, I provide my express
+                  written consent to Health Accident Life and its licensed insurance
+                  agents to contact me at the phone number and email address provided,
+                  including through automated telephone dialing systems, pre-recorded
+                  messages, and text messages, regarding insurance products and services.
+                  I understand that my consent is not a condition of purchase and that I
+                  may revoke consent at any time. Message and data rates may apply.
+                  Reply STOP to opt out of text messages.
+                  View our <a href="privacy.html">Privacy Policy</a>.
                 </span>
+
               </label>
 
-              <p class="secure-note">Your information is secure and will not be sold.</p>
+              <p class="secure-note">
+                Your information is kept private and will not be sold.
+              </p>
+
             </section>
+
           </div>
+
 
           <div class="form-actions">
-            <button type="button" class="back-button" id="backButton">Back</button>
-            <button type="button" class="primary-button" id="nextButton">Continue</button>
-            <button type="submit" class="primary-button submit-button" id="submitButton">Request My Free Coverage Review</button>
+
+            <button
+              type="button"
+              class="back-button"
+              id="backButton"
+            >
+              Back
+            </button>
+
+            <button
+              type="button"
+              class="primary-button"
+              id="nextButton"
+            >
+              Continue
+            </button>
+
+            <button
+              type="submit"
+              class="primary-button submit-button"
+              id="submitButton"
+            >
+              Request My Free Coverage Review
+            </button>
+
           </div>
+
         </form>
+
       </div>
+
     </section>
 
-    <section class="value-section">
-      <div class="container value-grid">
-        <article class="value-card">
-          <div class="icon-circle">1</div>
-          <h3>We compare options for you</h3>
-          <p>
-            Instead of guessing between plans, get help reviewing available coverage options from multiple carriers.
-          </p>
-        </article>
 
-        <article class="value-card">
-          <div class="icon-circle">2</div>
-          <h3>Fast, simple process</h3>
-          <p>
-            Answer a few questions in minutes so a licensed advisor can understand what you may need.
-          </p>
-        </article>
+    <!-- COVERAGE -->
 
-        <article class="value-card">
-          <div class="icon-circle">3</div>
-          <h3>Guided by licensed support</h3>
-          <p>
-            Get help understanding premiums, deductibles, benefits, and enrollment options before choosing a plan.
-          </p>
-        </article>
-      </div>
-    </section>
+    <section class="coverage-section" id="coverage-options">
 
-    <section class="about-section">
-      <div class="container about-card">
-        <div>
-          <p class="eyebrow dark">Licensed insurance help</p>
-          <h2>Coverage Guidance Without the Pressure</h2>
-        </div>
-
-        <p>
-          Health Accident Life was created to make insurance shopping less confusing. Instead of trying to sort through coverage options alone, you can answer a few quick questions and get help from a licensed insurance advisor who can explain what may be available based on your needs, location, and eligibility.
-        </p>
-      </div>
-    </section>
-
-    <section class="carrier-section">
       <div class="container">
-        <p class="section-label">Examples of carriers that may be available</p>
 
-        <div class="carrier-list" aria-label="Examples of insurance carriers">
-          <span>Blue Cross</span>
-          <span>Aetna</span>
-          <span>Cigna</span>
-          <span>UnitedHealthcare</span>
-          <span>Ambetter</span>
-          <span>Oscar</span>
-          <span>Molina</span>
-          <span>Humana</span>
-          <span>And more</span>
+        <div class="section-heading">
+
+          <p class="eyebrow dark">Coverage options</p>
+
+          <h2>More than one way to protect what matters.</h2>
+
+          <p>
+            Your needs may not fit neatly into one insurance product.
+            We can help you look at the bigger picture.
+          </p>
+
         </div>
 
-        <p class="carrier-disclaimer">
-          Carrier availability varies by state, product type, eligibility, and appointment status.
-        </p>
+
+        <div class="coverage-grid">
+
+          <article class="coverage-item">
+            <span>01</span>
+            <h3>Health</h3>
+            <p>
+              Individual, family, Marketplace, and other health coverage options.
+            </p>
+          </article>
+
+          <article class="coverage-item">
+            <span>02</span>
+            <h3>Life</h3>
+            <p>
+              Coverage designed to help protect the people who depend on you.
+            </p>
+          </article>
+
+          <article class="coverage-item">
+            <span>03</span>
+            <h3>Accident</h3>
+            <p>
+              Supplemental protection designed for unexpected injuries and expenses.
+            </p>
+          </article>
+
+          <article class="coverage-item">
+            <span>04</span>
+            <h3>Dental & Vision</h3>
+            <p>
+              Standalone options for routine care, exams, glasses, dental services, and more.
+            </p>
+          </article>
+
+          <article class="coverage-item">
+            <span>05</span>
+            <h3>Supplemental</h3>
+            <p>
+              Additional protection that can help fill gaps left by major medical coverage.
+            </p>
+          </article>
+
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="process-section" id="how-it-works">
+
+      <div class="container process-layout">
+
+        <div class="process-heading">
+
+          <p class="eyebrow">Simple by design</p>
+
+          <h2>You don't need to become an insurance expert.</h2>
+
+          <p>
+            That's our job. We help you understand the choices so you can make
+            a decision with more confidence.
+          </p>
+
+        </div>
+
+
+        <div class="process-steps">
+
+          <article>
+            <span>01</span>
+
+            <div>
+              <h3>Tell us what you need</h3>
+              <p>
+                Complete the short coverage review so we understand your situation.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+
+            <div>
+              <h3>Review your options</h3>
+              <p>
+                A licensed advisor helps identify coverage that may fit your needs.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+
+            <div>
+              <h3>Make an informed choice</h3>
+              <p>
+                Understand the cost, benefits, and tradeoffs before deciding.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about-section" id="about">
+
+      <div class="container about-layout">
+
+        <div class="about-heading">
+
+          <p class="eyebrow dark">Why Health Accident Life</p>
+
+          <h2>
+            Real guidance.
+            <br />
+            No insurance maze.
+          </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <p class="about-lead">
+            Insurance shopping shouldn't feel like decoding another language.
+          </p>
+
+          <p>
+            Health Accident Life helps individuals and families understand their
+            coverage options without the pressure and confusion that often come
+            with shopping for insurance.
+          </p>
+
+          <p>
+            We look beyond the cheapest premium. Doctors, prescriptions,
+            deductibles, copays, household needs, and overall protection all matter.
+          </p>
+
+          <a href="#coverage-review" class="text-link">
+            Start your coverage review →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRUST -->
+
+    <section class="trust-section">
+
+      <div class="container trust-layout">
+
+        <div>
+          <p class="trust-kicker">Licensed insurance guidance</p>
+
+          <h2>Coverage decisions deserve more than a search box.</h2>
+        </div>
+
+        <div class="trust-points">
+
+          <span>Licensed in all 50 states</span>
+          <span>Multiple insurance options</span>
+          <span>No-cost coverage review</span>
+          <span>Human advisor support</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
+
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <p class="footer-brand">Health Accident Life</p>
-        <p class="footer-text">Health, life, accident, dental, vision, and supplemental coverage options.</p>
+
+    <div class="container footer-main">
+
+      <div class="footer-brand-area">
+
+        <img
+          src="images/logo.png"
+          alt="Health Accident Life"
+          class="footer-logo"
+        />
+
+        <p>
+          Insurance guidance for health, life, accident,
+          dental, vision, and supplemental coverage.
+        </p>
+
       </div>
 
+
+      <div class="footer-contact">
+
+        <p class="footer-title">Contact</p>
+
+        <a href="tel:3139440576">
+          (313) 944-0576
+        </a>
+
+        <a href="mailto:cc@healthaccidentlife.com">
+          cc@healthaccidentlife.com
+        </a>
+
+      </div>
+
+
       <div class="footer-links">
+
+        <p class="footer-title">Information</p>
+
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="licensing.html">Licensing Disclosure</a>
-        <a href="mailto:cc@healthaccidentlife.com">Contact</a>
+
       </div>
+
     </div>
+
 
     <div class="container footer-disclaimer">
+
       <p>
-        By submitting your information, you agree to be contacted by a licensed insurance advisor by phone, text, or email regarding insurance options. Product availability, benefits, and eligibility vary by state, carrier, and individual circumstances. Health Accident Life is not affiliated with or endorsed by the U.S. government, the federal Medicare program, or any state-based marketplace.
+        Product availability, benefits, eligibility, and pricing vary by state,
+        carrier, and individual circumstances. Health Accident Life is not affiliated
+        with or endorsed by the U.S. government, the federal Medicare program,
+        Healthcare.gov, or any state-based Marketplace.
       </p>
-      <p>© 2026 Health Accident Life. All rights reserved.</p>
+
+      <p>
+        © 2026 Health Accident Life. All rights reserved.
+      </p>
+
     </div>
+
   </footer>
 
+
   <script src="js/script.js"></script>
+
 </body>
 </html>
