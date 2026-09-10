@@ -1682,3 +1682,16 @@ input[type="range"] {
     padding-bottom: 68px;
   }
 }
+/* FINAL HERO TWEAK */
+
+.hero-copy h1 {
+  max-width: 660px;
+}
+
+.hero-copy h1 span {
+  max-width: 630px;
+}
+
+.hero-trust {
+  margin-top: 34px;
+}
