@@ -1942,23 +1942,25 @@ select:hover {
   align-items: center;
   min-height: 2.7em;
 }
-/* TRUE CENTERING FOR CHOICE CARDS */
+/* BALANCED CHOICE CARD ALIGNMENT */
 
 .choice-card {
-  position: relative;
-  justify-content: center;
-  text-align: center;
-  padding: 16px 54px;
-}
-
-.choice-card span {
-  display: block;
-  width: 100%;
-  min-height: auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  text-align: left;
 }
 
 .choice-card::before {
-  position: absolute;
-  left: 20px;
+  position: static;
+  grid-column: 1;
+}
+
+.choice-card span {
+  grid-column: 2;
+  display: block;
+  min-height: auto;
+  text-align: left;
 }
