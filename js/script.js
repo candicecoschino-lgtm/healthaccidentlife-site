@@ -55,12 +55,18 @@ function showStep(stepNumber) {
     nextButton.style.display = "inline-flex";
     submitButton.style.display = "none";
   }
-
+  
+if (currentStep > 1) {
   const formTop = document.querySelector(".quote-card");
+
   if (formTop) {
-    formTop.scrollIntoView({ behavior: "smooth", block: "start" });
+    formTop.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   }
 }
+  
 
 function getCurrentStepElement() {
   return steps.find((step) => Number(step.dataset.step) === currentStep);
