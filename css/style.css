@@ -1896,3 +1896,20 @@ select:hover {
     padding: 18px 20px 22px;
   }
 }
+/* TABLET FORM WIDTH FIX */
+
+@media (max-width: 950px) {
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-intro {
+    max-width: 620px;
+  }
+
+  .quote-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
