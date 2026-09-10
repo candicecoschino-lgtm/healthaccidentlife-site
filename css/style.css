@@ -1695,3 +1695,17 @@ input[type="range"] {
 .hero-trust {
   margin-top: 34px;
 }
+/* HERO SPACING CLEANUP */
+
+.hero-layout {
+  padding-bottom: 96px;
+}
+
+.hero-trust {
+  margin-top: 38px;
+  padding-top: 24px;
+}
+
+.hero-side-panel {
+  align-self: center;
+}
