@@ -1913,3 +1913,21 @@ select:hover {
     margin: 0 auto;
   }
 }
+/* TABLET / NARROW DESKTOP FORM FIX */
+
+@media (min-width: 651px) and (max-width: 950px) {
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-intro {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .quote-card {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+}
