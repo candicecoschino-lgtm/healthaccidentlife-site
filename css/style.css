@@ -1584,3 +1584,101 @@ input[type="range"] {
   }
 
 }
+
+/* POLISH PATCH */
+
+/* Tighten header */
+.header-inner {
+  min-height: 82px;
+}
+
+.site-logo {
+  width: 176px;
+}
+
+
+/* Refine hero spacing */
+.hero-layout {
+  min-height: 600px;
+  padding-top: 66px;
+  padding-bottom: 82px;
+}
+
+
+/* Improve headline wrapping */
+.hero-copy h1 {
+  max-width: 700px;
+  font-size: clamp(2.85rem, 5vw, 4.75rem);
+  line-height: 1;
+}
+
+
+/* Bring CTA area up slightly */
+.hero-actions {
+  margin-top: 28px;
+}
+
+.hero-trust {
+  margin-top: 42px;
+  padding-top: 25px;
+}
+
+
+/* Soften right-side hero panel */
+.hero-side-panel {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.panel-callout {
+  background: rgba(0, 116, 217, 0.16);
+  border: 1px solid rgba(114, 195, 255, 0.14);
+}
+
+
+/* Bring form columns closer */
+.form-layout {
+  gap: 48px;
+}
+
+
+/* Slightly integrate form with page */
+.quote-card {
+  border: 1px solid #cfdbe8;
+}
+
+.form-body {
+  background: #fdfefe;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 950px) {
+  .hero-layout {
+    min-height: auto;
+    padding-top: 62px;
+    padding-bottom: 82px;
+  }
+
+  .form-layout {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-inner {
+    min-height: 76px;
+  }
+
+  .site-logo {
+    width: 140px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.45rem, 11vw, 3.6rem);
+  }
+
+  .hero-layout {
+    padding-top: 52px;
+    padding-bottom: 68px;
+  }
+}
