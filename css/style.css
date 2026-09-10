@@ -1931,3 +1931,14 @@ select:hover {
     margin: 0 auto;
   }
 }
+/* CENTER CHOICE CARD TEXT */
+
+.choice-card {
+  align-items: center;
+}
+
+.choice-card span {
+  display: flex;
+  align-items: center;
+  min-height: 2.7em;
+}
