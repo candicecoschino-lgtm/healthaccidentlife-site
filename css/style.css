@@ -1942,3 +1942,23 @@ select:hover {
   align-items: center;
   min-height: 2.7em;
 }
+/* TRUE CENTERING FOR CHOICE CARDS */
+
+.choice-card {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 54px;
+}
+
+.choice-card span {
+  display: block;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+}
+
+.choice-card::before {
+  position: absolute;
+  left: 20px;
+}
