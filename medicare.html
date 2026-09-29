@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Medicare Insurance Options | Health Accident Life</title>
+
+  <meta
+    name="description"
+    content="Learn about Medicare Advantage, Medicare Supplement, and Medicare Part D coverage options with help from Health Accident Life."
+  />
+
+  <link rel="canonical" href="https://healthaccidentlife.com/medicare.html" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .service-hero {
+      padding: 90px 0 80px;
+      background: #001f3f;
+      color: #ffffff;
+    }
+
+    .service-hero-layout {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .service-hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      margin: 16px 0 24px;
+      max-width: 850px;
+    }
+
+    .service-hero h1 span {
+      display: block;
+    }
+
+    .service-hero-copy {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      max-width: 760px;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .service-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    .service-hero-button {
+      display: inline-block;
+      padding: 16px 26px;
+      background: #0074d9;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+
+    .service-hero-phone {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .service-side-card {
+      background: #ffffff;
+      color: #001f3f;
+      padding: 34px;
+      border-radius: 12px;
+    }
+
+    .service-side-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .service-side-card ul {
+      padding-left: 20px;
+      line-height: 1.9;
+      margin-bottom: 0;
+    }
+
+    .content-section {
+      padding: 80px 0;
+    }
+
+    .content-section.alt {
+      background: #f8f9fa;
+    }
+
+    .content-narrow {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .content-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #001f3f;
+      margin-bottom: 22px;
+    }
+
+    .content-section h3 {
+      color: #001f3f;
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    .content-section p,
+    .content-section li {
+      line-height: 1.8;
+      font-size: 1.05rem;
+      color: #333333;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .info-card {
+      border: 1px solid #e8eaed;
+      padding: 28px;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0 0;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 14px;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      color: #0074d9;
+    }
+
+    .faq-item {
+      padding: 26px 0;
+      border-bottom: 1px solid #e8eaed;
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .cta-section {
+      padding: 80px 0;
+      background: #001f3f;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: #ffffff;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin-bottom: 18px;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.88);
+      max-width: 760px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 16px 28px;
+      background: #0074d9;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+
+    .breadcrumb {
+      padding: 18px 0;
+      background: #f8f9fa;
+      font-size: 0.95rem;
+    }
+
+    .breadcrumb a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+
+    .medicare-disclaimer {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #5f6368;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 850px) {
+      .service-hero-layout,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-hero {
+        padding: 65px 0 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="brand-link" aria-label="Health Accident Life home">
+        <img src="images/logo.png" alt="Health Accident Life" class="site-logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#coverage-options">Coverage Options</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#about">Why HAL</a>
+      </nav>
+
+      <a class="header-phone" href="tel:3139440576">
+        <span>Talk to a licensed advisor</span>
+        <strong>(313) 944-0576</strong>
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <div class="breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a> / Medicare
+      </div>
+    </div>
+
+
+    <section class="service-hero">
+
+      <div class="container service-hero-layout">
+
+        <div>
+
+          <p class="eyebrow">Medicare coverage guidance</p>
+
+          <h1>
+            Medicare options
+            <span>made easier to understand.</span>
+          </h1>
+
+          <p class="service-hero-copy">
+            Medicare comes with several different coverage choices.
+            Health Accident Life helps you understand the differences between
+            Original Medicare, Medicare Advantage, Medicare Supplement insurance,
+            and Medicare prescription drug coverage.
+          </p>
+
+          <div class="service-hero-actions">
+
+            <a href="index.html#coverage-review" class="service-hero-button">
+              Request a Medicare Coverage Review
+            </a>
+
+            <a href="tel:3139440576" class="service-hero-phone">
+              Or call (313) 944-0576
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <aside class="service-side-card">
+
+          <h2>We can help you understand:</h2>
+
+          <ul>
+            <li>Original Medicare</li>
+            <li>Medicare Advantage plans</li>
+            <li>Medicare Supplement insurance</li>
+            <li>Medicare Part D prescription drug coverage</li>
+            <li>Provider networks</li>
+            <li>Prescription coverage</li>
+            <li>Out-of-pocket costs</li>
+          </ul>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section">
+
+      <div class="container content-narrow">
+
+        <p class="eyebrow dark">Medicare basics</p>
+
+        <h2>Understanding the parts of Medicare</h2>
+
+        <p>
+          Medicare is a federal health insurance program primarily available
+          to people age 65 and older and certain younger people who meet
+          eligibility requirements.
+        </p>
+
+        <p>
+          Medicare includes several different parts, and the way those parts
+          work together depends on the type of coverage you choose.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section alt">
+
+      <div class="container">
+
+        <div class="content-narrow">
+
+          <p class="eyebrow dark">Coverage choices</p>
+
+          <h2>What are the main Medicare options?</h2>
+
+        </div>
+
+
+        <div class="info-grid">
+
+          <article class="info-card">
+
+            <h3>Original Medicare</h3>
+
+            <p>
+              Original Medicare includes Medicare Part A and Part B.
+              It provides hospital and medical coverage through the federal
+              Medicare program.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>Medicare Advantage</h3>
+
+            <p>
+              Medicare Advantage plans are offered by private insurance companies
+              that contract with Medicare and provide Medicare Part A and Part B
+              benefits through the plan.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>Medicare Supplement</h3>
+
+            <p>
+              Medicare Supplement insurance, also called Medigap, is designed
+              to help pay certain out-of-pocket costs associated with Original
+              Medicare.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>Medicare Part D</h3>
+
+            <p>
+              Medicare Part D helps provide prescription drug coverage.
+              Coverage and formularies can vary between plans.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>Provider Access</h3>
+
+            <p>
+              Different Medicare coverage options may have different provider
+              access rules and network requirements.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <h3>Prescription Coverage</h3>
+
+            <p>
+              Reviewing medications and plan formularies can be an important
+              part of comparing Medicare options.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section">
+
+      <div class="container content-narrow">
+
+        <p class="eyebrow dark">Comparing coverage</p>
+
+        <h2>What should you consider when reviewing Medicare options?</h2>
+
+        <p>
+          Medicare coverage is not one-size-fits-all. Your healthcare needs,
+          doctors, prescriptions, travel habits, financial priorities, and
+          preferred way of receiving care can all affect which type of coverage
+          may fit your situation.
+        </p>
+
+        <ul class="check-list">
+          <li>Monthly premiums</li>
+          <li>Deductibles and copays</li>
+          <li>Maximum out-of-pocket costs where applicable</li>
+          <li>Doctor and hospital access</li>
+          <li>Prescription drug coverage</li>
+          <li>Plan networks</li>
+          <li>Coverage while traveling</li>
+          <li>Additional plan rules and requirements</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section alt">
+
+      <div class="container content-narrow">
+
+        <p class="eyebrow dark">Enrollment timing</p>
+
+        <h2>When can you enroll or change Medicare coverage?</h2>
+
+        <p>
+          Medicare has several enrollment periods. Which enrollment period
+          applies depends on your age, eligibility, current coverage, and
+          circumstances.
+        </p>
+
+        <h3>Common Medicare enrollment periods include:</h3>
+
+        <ul class="check-list">
+          <li>Initial Enrollment Period</li>
+          <li>Annual Enrollment Period</li>
+          <li>Medicare Advantage Open Enrollment Period</li>
+          <li>Special Enrollment Periods in qualifying circumstances</li>
+        </ul>
+
+        <p>
+          Enrollment rules and deadlines can vary depending on the type of
+          coverage and your individual circumstances.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section">
+
+      <div class="container content-narrow">
+
+        <p class="eyebrow dark">How we help</p>
+
+        <h2>Compare Medicare coverage with licensed support.</h2>
+
+        <p>
+          Health Accident Life helps you understand available Medicare
+          coverage options and the tradeoffs between different types of plans.
+        </p>
+
+        <ul class="check-list">
+          <li>Review your current coverage</li>
+          <li>Compare available Medicare options</li>
+          <li>Review doctor and hospital access</li>
+          <li>Review prescription coverage</li>
+          <li>Understand plan costs</li>
+          <li>Ask questions before making a decision</li>
+          <li>Get enrollment assistance when appropriate</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <section class="content-section alt">
+
+      <div class="container content-narrow">
+
+        <p class="eyebrow dark">Frequently asked questions</p>
+
+        <h2>Medicare FAQs</h2>
+
+
+        <div class="faq-item">
+
+          <h3>Is Medicare Advantage the same as Original Medicare?</h3>
+
+          <p>
+            No. Original Medicare is administered by the federal government.
+            Medicare Advantage plans are offered by private insurance companies
+            that contract with Medicare.
+          </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <h3>What is Medicare Supplement insurance?</h3>
+
+          <p>
+            Medicare Supplement insurance, also called Medigap, works with
+            Original Medicare and is designed to help cover certain costs that
+            Original Medicare does not pay.
+          </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <h3>Do I need prescription drug coverage?</h3>
+
+          <p>
+            Prescription drug coverage may be available through a standalone
+            Medicare Part D plan or through certain Medicare Advantage plans
+            that include prescription drug coverage.
+          </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <h3>Can you help me check my doctors?</h3>
+
+          <p>
+            Yes. Provider access is an important part of comparing Medicare
+            coverage options.
+          </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <h3>Can you help review my medications?</h3>
+
+          <p>
+            Yes. Prescription formularies and costs can vary between plans,
+            so reviewing medications can be an important part of comparing
+            coverage.
+          </p>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <h3>Does it cost anything to request a Medicare coverage review?</h3>
+
+          <p>
+            There is no cost for your coverage review with Health Accident Life.
+          </p>
+
+        </div>
+
+
+        <p class="medicare-disclaimer">
+          Health Accident Life is not connected with or endorsed by the U.S.
+          government or the federal Medicare program. Product availability,
+          benefits, eligibility, and costs vary by carrier, plan, location,
+          and individual circumstances.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="cta-section">
+
+      <div class="container">
+
+        <h2>Let's make Medicare easier to understand.</h2>
+
+        <p>
+          Tell us about your current coverage, doctors, prescriptions, and
+          priorities. A licensed insurance advisor can help you review
+          available options.
+        </p>
+
+        <a href="index.html#coverage-review" class="cta-button">
+          Request a Medicare Coverage Review
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-brand-area">
+
+        <img
+          src="images/logo.png"
+          alt="Health Accident Life"
+          class="footer-logo"
+        />
+
+        <p>
+          Insurance guidance for health, life, accident,
+          dental, vision, and supplemental coverage.
+        </p>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <p class="footer-title">Contact</p>
+
+        <a href="tel:3139440576">
+          (313) 944-0576
+        </a>
+
+        <a href="mailto:cc@healthaccidentlife.com">
+          cc@healthaccidentlife.com
+        </a>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <p class="footer-title">Information</p>
+
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="licensing.html">Licensing Disclosure</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-disclaimer">
+
+      <p>
+        Product availability, benefits, eligibility, and pricing vary by state,
+        carrier, and individual circumstances. Health Accident Life is not affiliated
+        with or endorsed by the U.S. government, the federal Medicare program,
+        Healthcare.gov, or any state-based Marketplace.
+      </p>
+
+      <p>
+        © 2026 Health Accident Life. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
