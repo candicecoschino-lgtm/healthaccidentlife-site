@@ -1055,16 +1055,21 @@ input[type="range"] {
 
   gap: 100px;
 }
-
+.about-eyebrow {
+  font-size: 1rem;
+  letter-spacing: .14em;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
 .about-heading h2 {
   margin: 0;
 
   color: var(--navy);
 
-  font-size: clamp(2.5rem, 5vw, 4.4rem);
-  line-height: 1;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.05;
 
-  letter-spacing: -.055em;
+  letter-spacing: -.04em;
 }
 
 .about-content {
@@ -1076,9 +1081,9 @@ input[type="range"] {
 
   color: var(--navy);
 
-  font-size: 1.45rem;
-  font-weight: 800;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .about-content p:not(.about-lead) {
