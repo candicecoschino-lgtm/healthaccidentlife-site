@@ -940,9 +940,9 @@ input[type="range"] {
 }
 
 .coverage-item {
-  min-height: 180px;
+  min-height: auto;
 
-  padding: 24px 24px;
+  padding: 20px 24px;
 
   border-right: 1px solid var(--border);
 }
