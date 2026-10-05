@@ -31,6 +31,7 @@ function formatCurrency(value) {
 
 function updateIncomeDisplay() {
   if (!annualIncome || !incomeValue) return;
+
   incomeValue.textContent = formatCurrency(annualIncome.value);
 }
 
@@ -42,42 +43,62 @@ function showStep(stepNumber) {
 
   currentStep = stepNumber;
 
-  stepCounter.textContent = `Step ${currentStep} of ${steps.length}`;
-  stepTitle.textContent = stepTitles[currentStep] || "";
-  progressFill.style.width = `${(currentStep / steps.length) * 100}%`;
+  if (stepCounter) {
+    stepCounter.textContent = `Step ${currentStep} of ${steps.length}`;
+  }
 
-  backButton.style.visibility = currentStep === 1 ? "hidden" : "visible";
+  if (stepTitle) {
+    stepTitle.textContent = stepTitles[currentStep] || "";
+  }
+
+  if (progressFill) {
+    progressFill.style.width = `${(currentStep / steps.length) * 100}%`;
+  }
+
+  if (backButton) {
+    backButton.style.visibility =
+      currentStep === 1 ? "hidden" : "visible";
+  }
 
   if (currentStep === steps.length) {
-    nextButton.style.display = "none";
-    submitButton.style.display = "inline-flex";
+    if (nextButton) nextButton.style.display = "none";
+    if (submitButton) submitButton.style.display = "inline-flex";
   } else {
-    nextButton.style.display = "inline-flex";
-    submitButton.style.display = "none";
+    if (nextButton) nextButton.style.display = "inline-flex";
+    if (submitButton) submitButton.style.display = "none";
   }
-  
-if (currentStep > 1) {
-  const formTop = document.querySelector(".quote-card");
 
-  if (formTop) {
-    formTop.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+  if (currentStep > 1) {
+    const formTop = document.querySelector(".quote-card");
+
+    if (formTop) {
+      formTop.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
   }
 }
-  
 
 function getCurrentStepElement() {
-  return steps.find((step) => Number(step.dataset.step) === currentStep);
+  return steps.find(
+    (step) => Number(step.dataset.step) === currentStep
+  );
 }
 
 function clearStepError(stepElement) {
+  if (!stepElement) return;
+
   const existingError = stepElement.querySelector(".step-error");
-  if (existingError) existingError.remove();
+
+  if (existingError) {
+    existingError.remove();
+  }
 }
 
 function showStepError(stepElement, message) {
+  if (!stepElement) return;
+
   clearStepError(stepElement);
 
   const error = document.createElement("p");
@@ -89,30 +110,47 @@ function showStepError(stepElement, message) {
 
 function validateCurrentStep() {
   const stepElement = getCurrentStepElement();
+
   if (!stepElement) return true;
 
   clearStepError(stepElement);
 
   if (currentStep === 1) {
-    const checked = stepElement.querySelectorAll('input[name="coverage_type"]:checked');
+    const checked = stepElement.querySelectorAll(
+      'input[name="coverage_type"]:checked'
+    );
+
     if (checked.length === 0) {
-      showStepError(stepElement, "Please select at least one coverage type.");
+      showStepError(
+        stepElement,
+        "Please select at least one coverage type."
+      );
       return false;
     }
   }
 
   if (currentStep === 2) {
-    const checked = stepElement.querySelector('input[name="who_needs_coverage"]:checked');
+    const checked = stepElement.querySelector(
+      'input[name="who_needs_coverage"]:checked'
+    );
+
     if (!checked) {
-      showStepError(stepElement, "Please select who needs coverage.");
+      showStepError(
+        stepElement,
+        "Please select who needs coverage."
+      );
       return false;
     }
   }
 
   if (currentStep === 3) {
     const age = document.getElementById("yourAge");
-    if (!age.value || Number(age.value) <= 0) {
-      showStepError(stepElement, "Please enter your age.");
+
+    if (!age || !age.value || Number(age.value) <= 0) {
+      showStepError(
+        stepElement,
+        "Please enter your age."
+      );
       return false;
     }
   }
@@ -121,36 +159,57 @@ function validateCurrentStep() {
     const zip = document.getElementById("zipCode");
     const state = document.getElementById("state");
 
-    if (!zip.value.trim()) {
-      showStepError(stepElement, "Please enter your ZIP code.");
+    if (!zip || !zip.value.trim()) {
+      showStepError(
+        stepElement,
+        "Please enter your ZIP code."
+      );
       return false;
     }
 
-    if (!state.value) {
-      showStepError(stepElement, "Please select your state.");
+    if (!state || !state.value) {
+      showStepError(
+        stepElement,
+        "Please select your state."
+      );
       return false;
     }
   }
 
   if (currentStep === 6) {
-    const checked = stepElement.querySelector('input[name="current_coverage"]:checked');
+    const checked = stepElement.querySelector(
+      'input[name="current_coverage"]:checked'
+    );
+
     if (!checked) {
-      showStepError(stepElement, "Please select your current coverage status.");
+      showStepError(
+        stepElement,
+        "Please select your current coverage status."
+      );
       return false;
     }
   }
 
   if (currentStep === 7) {
-    const usage = stepElement.querySelector('input[name="healthcare_usage"]:checked');
+    const usage = stepElement.querySelector(
+      'input[name="healthcare_usage"]:checked'
+    );
+
     const priority = document.getElementById("planPriority");
 
     if (!usage) {
-      showStepError(stepElement, "Please select how often you typically use healthcare.");
+      showStepError(
+        stepElement,
+        "Please select how often you typically use healthcare."
+      );
       return false;
     }
 
-    if (!priority.value) {
-      showStepError(stepElement, "Please select what matters most to you in a plan.");
+    if (!priority || !priority.value) {
+      showStepError(
+        stepElement,
+        "Please select what matters most to you in a plan."
+      );
       return false;
     }
   }
@@ -162,60 +221,95 @@ function validateFinalSubmit(event) {
   const fullName = document.getElementById("fullName");
   const phoneNumber = document.getElementById("phoneNumber");
   const emailAddress = document.getElementById("emailAddress");
-  const consent = document.querySelector('input[name="tcpa_consent"]');
+  const consent = document.querySelector(
+    'input[name="tcpa_consent"]'
+  );
+
   const finalStep = getCurrentStepElement();
 
   clearStepError(finalStep);
 
-  if (!fullName.value.trim()) {
+  if (!fullName || !fullName.value.trim()) {
     event.preventDefault();
-    showStepError(finalStep, "Please enter your full name.");
+
+    showStepError(
+      finalStep,
+      "Please enter your full name."
+    );
+
     return;
   }
 
-  if (!phoneNumber.value.trim()) {
+  if (!phoneNumber || !phoneNumber.value.trim()) {
     event.preventDefault();
-    showStepError(finalStep, "Please enter your phone number.");
+
+    showStepError(
+      finalStep,
+      "Please enter your phone number."
+    );
+
     return;
   }
 
-  if (!emailAddress.value.trim()) {
+  if (!emailAddress || !emailAddress.value.trim()) {
     event.preventDefault();
-    showStepError(finalStep, "Please enter your email address.");
+
+    showStepError(
+      finalStep,
+      "Please enter your email address."
+    );
+
     return;
   }
 
-  if (!consent.checked) {
+  if (!consent || !consent.checked) {
     event.preventDefault();
-    showStepError(finalStep, "Please check the consent box before submitting.");
+
+    showStepError(
+      finalStep,
+      "Please check the consent box before submitting."
+    );
   }
 }
 
-nextButton.addEventListener("click", () => {
-  if (!validateCurrentStep()) return;
+if (nextButton) {
+  nextButton.addEventListener("click", () => {
+    if (!validateCurrentStep()) return;
 
-  if (currentStep < steps.length) {
-    showStep(currentStep + 1);
-  }
-});
+    if (currentStep < steps.length) {
+      showStep(currentStep + 1);
+    }
+  });
+}
 
-backButton.addEventListener("click", () => {
-  if (currentStep > 1) {
-    showStep(currentStep - 1);
-  }
-});
+if (backButton) {
+  backButton.addEventListener("click", () => {
+    if (currentStep > 1) {
+      showStep(currentStep - 1);
+    }
+  });
+}
 
 if (annualIncome) {
-  annualIncome.addEventListener("input", updateIncomeDisplay);
+  annualIncome.addEventListener(
+    "input",
+    updateIncomeDisplay
+  );
+
   updateIncomeDisplay();
 }
 
 const quoteForm = document.getElementById("quoteForm");
+
 if (quoteForm) {
-  quoteForm.addEventListener("submit", validateFinalSubmit);
+  quoteForm.addEventListener(
+    "submit",
+    validateFinalSubmit
+  );
 }
 
 const style = document.createElement("style");
+
 style.textContent = `
   .step-error {
     margin: 18px 0 0;
@@ -227,6 +321,7 @@ style.textContent = `
     border: 1px solid #fecdca;
   }
 `;
+
 document.head.appendChild(style);
 
 showStep(1);
