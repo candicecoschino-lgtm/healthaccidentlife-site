@@ -1944,3 +1944,138 @@ select:hover {
 .coverage-item p {
   line-height: 1.65;
 }
+
+/* FAMILY COVERAGE REVIEW DESIGN */
+
+.form-section {
+  position: relative;
+  margin-top: 0;
+  padding: 70px 0 105px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.form-layout {
+  width: min(1440px, calc(100% - 64px));
+  display: grid;
+  grid-template-columns:
+    minmax(360px, 460px)
+    minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 42px;
+  row-gap: 0;
+  align-items: start;
+}
+
+.form-intro {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 0;
+  max-width: none;
+}
+
+.form-intro h2 {
+  font-size: clamp(2.4rem, 3.9vw, 3.5rem);
+}
+
+.form-benefits {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+/* QUESTIONNAIRE */
+
+.form-layout > .quote-card {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  z-index: 2;
+}
+
+/* FAMILY IMAGE */
+
+.family-visual {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+  min-height: 840px;
+  margin-right: calc(
+    (min(1440px, 100vw - 64px) - 100vw) / 2
+  );
+  overflow: hidden;
+  border-radius: 30px 0 0 30px;
+  background: #e7f4ff;
+}
+
+.family-visual img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* TABLET LAYOUT */
+
+@media (max-width: 1050px) {
+  .form-layout {
+    grid-template-columns: minmax(0, 1fr);
+    width: min(760px, calc(100% - 40px));
+    row-gap: 24px;
+  }
+
+  .form-intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .form-layout > .quote-card {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .family-visual {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 310px;
+    height: 310px;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .form-section {
+    padding-top: 55px;
+  }
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 650px) {
+  .form-layout {
+    width: calc(100% - 28px);
+    gap: 18px;
+  }
+
+  .form-section {
+    padding: 38px 0 70px;
+  }
+
+  .form-intro h2 {
+    font-size: clamp(2.15rem, 9vw, 3rem);
+  }
+
+  .family-visual {
+    height: 210px;
+    min-height: 210px;
+    border-radius: 16px;
+  }
+
+  .form-benefits {
+    margin-bottom: 12px;
+  }
+}
