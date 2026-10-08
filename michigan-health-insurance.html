@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Michigan Health Insurance & ACA Plans | Health Accident Life</title>
+  <meta name="description" content="Compare Michigan ACA Marketplace health insurance plans with Health Accident Life. Get help from a licensed advisor or shop and enroll online.">
+  <link rel="canonical" href="https://healthaccidentlife.com/michigan-health-insurance.html">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    :root {
+      --navy: #001f3f;
+      --blue: #0074d9;
+      --light: #f8f9fa;
+      --border: #e8eaed;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    a { color: var(--blue); }
+
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 18px 0;
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--navy);
+      font-size: 1.35rem;
+      font-weight: 800;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    .brand-link img {
+      max-width: 220px;
+      max-height: 65px;
+      object-fit: contain;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .header-phone {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      text-decoration: none;
+      color: var(--navy);
+      white-space: nowrap;
+    }
+
+    .header-phone span { font-size: .8rem; }
+    .header-phone strong { font-size: 1.15rem; }
+
+    .breadcrumb {
+      padding: 16px 0;
+      background: var(--light);
+      font-size: .9rem;
+    }
+
+    .breadcrumb a { text-decoration: none; }
+
+    .service-hero {
+      background: var(--navy);
+      color: #fff;
+      padding: 78px 0;
+    }
+
+    .hero-layout {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .eyebrow {
+      color: #90c8ff;
+      font-size: .85rem;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .service-hero h1 {
+      font-size: clamp(2.6rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin: 18px 0 25px;
+      color: #fff;
+    }
+
+    .hero-copy {
+      font-size: 1.15rem;
+      color: #e0e9f3;
+      max-width: 680px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 23px;
+      border-radius: 6px;
+      background: var(--blue);
+      color: #fff;
+      font-size: .95rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      transition: background .2s ease;
+    }
+
+    .button:hover { background: #005cae; }
+
+    .button-outline {
+      background: transparent;
+      border: 2px solid #fff;
+    }
+
+    .button-outline:hover { background: #163d65; }
+
+    .phone-link {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .side-card {
+      background: #fff;
+      color: var(--navy);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    }
+
+    .side-card h2 {
+      font-size: 1.45rem;
+      margin: 0 0 15px;
+      color: var(--navy);
+    }
+
+    .side-card ul {
+      padding-left: 22px;
+      margin-bottom: 0;
+      line-height: 2;
+    }
+
+    .section { padding: 76px 0; }
+    .section.alt { background: var(--light); }
+
+    .narrow {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      color: var(--navy);
+      line-height: 1.2;
+      margin: 0 0 22px;
+    }
+
+    .section h3 {
+      color: var(--navy);
+      margin: 0 0 12px;
+    }
+
+    .section p { font-size: 1.05rem; }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .info-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 27px;
+    }
+
+    .info-card p { margin-bottom: 0; }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .choice-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .choice-card h3 { font-size: 1.4rem; }
+
+    .choice-card p { flex: 1; }
+
+    .choice-card .button { margin-top: 12px; }
+
+    .check-list { padding-left: 22px; }
+    .check-list li { margin-bottom: 12px; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+    }
+
+    .faq-item p { margin-bottom: 0; }
+
+    .cta-section {
+      background: var(--navy);
+      color: #fff;
+      padding: 78px 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: #fff;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 15px;
+    }
+
+    .cta-section p {
+      max-width: 720px;
+      margin: 0 auto 26px;
+      color: #e0e9f3;
+    }
+
+    .site-footer {
+      background: #071a30;
+      color: #d7e1eb;
+      padding: 55px 0 25px;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    .footer-title {
+      color: #fff;
+      font-weight: 800;
+      margin-top: 0;
+    }
+
+    .footer-brand {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    .site-footer a {
+      display: block;
+      color: #d7e1eb;
+      text-decoration: none;
+      margin: 0 0 10px;
+    }
+
+    .footer-disclaimer {
+      border-top: 1px solid #33465a;
+      margin-top: 35px;
+      padding-top: 22px;
+      font-size: .82rem;
+      color: #b8c5d2;
+    }
+
+    @media (max-width: 900px) {
+      .hero-layout { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: repeat(2,1fr); }
+      .footer-main { grid-template-columns: repeat(2,1fr); }
+      .header-inner { flex-wrap: wrap; }
+    }
+
+    @media (max-width: 600px) {
+      .container { width: calc(100% - 32px); }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .main-nav { gap: 12px 18px; }
+      .header-phone { text-align: left; }
+      .service-hero { padding: 55px 0; }
+      .section { padding: 55px 0; }
+      .card-grid, .choice-grid, .footer-main {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .side-card { padding: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="brand-link" aria-label="Health Accident Life home">
+      Health Accident Life
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/index.html">Home</a>
+      <a href="/index.html#coverage-options">Coverage Options</a>
+      <a href="/index.html#how-it-works">How It Works</a>
+      <a href="/index.html#about">Why HAL</a>
+    </nav>
+
+    <a href="tel:8006370775" class="header-phone">
+      <span>Talk to a licensed advisor</span>
+      <strong>(800) 637-0775</strong>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/index.html">Home</a> /
+      <a href="/aca-health-insurance.html">ACA Health Insurance</a> /
+      Michigan
+    </div>
+  </div>
+
+  <section class="service-hero">
+    <div class="container hero-layout">
+
+      <div>
+        <p class="eyebrow">Michigan Individual & Family Coverage</p>
+
+        <h1>Michigan Health Insurance without the guesswork.</h1>
+
+        <p class="hero-copy">
+          Based in Michigan, Health Accident Life helps individuals,
+          families, and self-employed professionals compare ACA
+          Marketplace health insurance plans. Work with a licensed
+          advisor or shop and enroll online at your own pace.
+        </p>
+
+        <div class="hero-actions">
+          <a href="/index.html#coverage-review" class="button">
+            Start My Coverage Review
+          </a>
+
+          <a href="https://www.healthsherpa.com/?_agent_id=candice-coschino-vyijhg"
+             class="button button-outline"
+             target="_blank"
+             rel="noopener noreferrer">
+            Shop &amp; Enroll Online
+          </a>
+
+          <a href="tel:8006370775" class="phone-link">
+            Or call (800) 637-0775
+          </a>
+        </div>
+      </div>
+
+      <aside class="side-card">
+        <h2>We can help you compare:</h2>
+        <ul>
+          <li>ACA Marketplace plans</li>
+          <li>Individual and family coverage</li>
+          <li>Monthly premiums</li>
+          <li>Deductibles and copays</li>
+          <li>Provider networks</li>
+          <li>Prescription coverage</li>
+          <li>Marketplace savings</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <p class="eyebrow" style="color:#0074d9">Understanding your options</p>
+      <h2>Looking for health insurance in Michigan?</h2>
+
+      <p>
+        Whether you live in Grand Blanc, Flint, Genesee County,
+        or elsewhere in Michigan, choosing health insurance
+        involves more than comparing monthly premiums.
+      </p>
+
+      <p>
+        You also need to consider your doctors, prescriptions,
+        deductibles, copays, provider networks, and expected
+        healthcare needs.
+      </p>
+
+      <p>
+        Health Accident Life helps Michigan residents understand
+        ACA Marketplace coverage options through convenient
+        online and phone-based assistance.
+      </p>
+
+      <p>
+        If you prefer to explore plans independently, you can
+        also use our online enrollment option.
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="narrow">
+        <h2>What should you compare in an ACA health insurance plan?</h2>
+        <p>
+          A lower premium doesn't always mean lower overall
+          healthcare costs. Understanding how a plan works
+          can help you make a more informed decision.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="info-card">
+          <h3>Monthly Premium</h3>
+          <p>The amount you pay each month to maintain your coverage.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Deductibles</h3>
+          <p>What you may need to pay for certain covered services before additional plan benefits apply.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Provider Networks</h3>
+          <p>Check whether your preferred doctors, specialists, and hospitals participate in the plan.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Prescriptions</h3>
+          <p>Compare covered medications, drug tiers, and pharmacy options.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Copays &amp; Coinsurance</h3>
+          <p>Understand how much you may pay when receiving covered healthcare services.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Out-of-Pocket Maximum</h3>
+          <p>Review the annual limit on qualifying covered in-network expenses.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Can Michigan residents qualify for Marketplace savings?</h2>
+
+      <p>
+        Some Michigan households may qualify for premium tax
+        credits that reduce the monthly cost of ACA Marketplace
+        health insurance.
+      </p>
+
+      <p>
+        Eligibility can depend on household income, household
+        size, access to other coverage, and applicable
+        Marketplace requirements.
+      </p>
+
+      <p>
+        Savings and eligibility are not guaranteed.
+        The applicable Marketplace determines eligibility.
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="narrow">
+        <h2>Choose how you want to get covered.</h2>
+        <p>
+          Some people prefer working directly with an advisor.
+          Others want to compare plans and complete enrollment
+          themselves. We offer both options.
+        </p>
+      </div>
+
+      <div class="choice-grid">
+        <article class="choice-card">
+          <h3>Work With an Advisor</h3>
+          <p>
+            Have questions about networks, deductibles,
+            prescriptions, or Marketplace eligibility?
+            Request a coverage review and get assistance
+            from a licensed insurance advisor.
+          </p>
+          <a href="/index.html#coverage-review" class="button">
+            Start My Coverage Review
+          </a>
+        </article>
+
+        <article class="choice-card">
+          <h3>Shop &amp; Enroll Online</h3>
+          <p>
+            Prefer to do it yourself? Compare available ACA
+            Marketplace plans, review estimated costs and
+            potential savings, and complete enrollment
+            through our HealthSherpa agent link.
+          </p>
+          <a href="https://www.healthsherpa.com/?_agent_id=candice-coschino-vyijhg"
+             class="button"
+             target="_blank"
+             rel="noopener noreferrer">
+            Shop &amp; Enroll Online
+          </a>
+        </article>
+      </div>
+
+      <p style="font-size:.9rem;margin-top:22px">
+        Online enrollment opens on HealthSherpa, a separate
+        enrollment platform. Plan availability and enrollment
+        eligibility vary by location and circumstances.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>When can you enroll in Michigan health insurance?</h2>
+
+      <p>
+        Most individuals enroll in ACA Marketplace coverage
+        during the annual Open Enrollment Period.
+        Certain qualifying life events may allow enrollment
+        outside that period.
+      </p>
+
+      <h3>Examples of qualifying life events may include:</h3>
+      <ul class="check-list">
+        <li>Losing qualifying health insurance coverage</li>
+        <li>Getting married</li>
+        <li>Having or adopting a child</li>
+        <li>Moving under certain qualifying circumstances</li>
+        <li>Other qualifying household or coverage changes</li>
+      </ul>
+
+      <p>
+        Special Enrollment Period eligibility depends on
+        applicable Marketplace rules and your circumstances.
+      </p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container narrow">
+      <h2>Michigan Health Insurance FAQs</h2>
+
+      <div class="faq-item">
+        <h3>Can I buy ACA insurance if I'm self-employed?</h3>
+        <p>
+          Yes. Self-employed Michigan residents may qualify
+          for individual or family Marketplace coverage,
+          subject to eligibility requirements.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I keep my current doctor?</h3>
+        <p>
+          That depends on the plan's provider network.
+          We recommend checking your preferred providers
+          before choosing coverage.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I enroll in health insurance online?</h3>
+        <p>
+          Yes. You can use our HealthSherpa enrollment link
+          to review available Marketplace plans and complete
+          an application when eligible.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do I need to live in Grand Blanc to work with you?</h3>
+        <p>
+          No. Health Accident Life is based in Michigan and
+          assists eligible clients remotely throughout the
+          state. We also serve clients in other states where
+          we're appropriately licensed and authorized.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can you help if I recently lost employer coverage?</h3>
+        <p>
+          Losing qualifying employer coverage may make you
+          eligible for a Special Enrollment Period. Timing
+          and eligibility requirements apply.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to explore your coverage options?</h2>
+      <p>
+        Get personalized assistance or shop ACA Marketplace
+        plans online. Choose the option that works for you.
+      </p>
+
+      <div class="hero-actions" style="justify-content:center">
+        <a href="/index.html#coverage-review" class="button">
+          Start My Coverage Review
+        </a>
+
+        <a href="https://www.healthsherpa.com/?_agent_id=candice-coschino-vyijhg"
+           class="button button-outline"
+           target="_blank"
+           rel="noopener noreferrer">
+          Shop &amp; Enroll Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+
+    <div>
+      <p class="footer-brand">Health Accident Life</p>
+      <p>
+        Insurance guidance for health, life, accident,
+        dental, vision, and hospital indemnity coverage.
+      </p>
+    </div>
+
+    <div>
+      <p class="footer-title">Contact</p>
+      <a href="tel:8006370775">(800) 637-0775</a>
+      <a href="mailto:cc@healthaccidentlife.com">
+        cc@healthaccidentlife.com
+      </a>
+    </div>
+
+    <div>
+      <p class="footer-title">Coverage</p>
+      <a href="/aca-health-insurance.html">Health Insurance</a>
+      <a href="/medicare.html">Medicare</a>
+      <a href="/life-insurance.html">Life Insurance</a>
+      <a href="/accident-insurance.html">Accident Insurance</a>
+      <a href="/dental-insurance.html">Dental &amp; Vision</a>
+      <a href="/hospital-indemnity.html">Hospital Indemnity</a>
+    </div>
+
+    <div>
+      <p class="footer-title">Information</p>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="/licensing.html">Licensing Disclosure</a>
+    </div>
+
+  </div>
+
+  <div class="container footer-disclaimer">
+    <p>
+      Product availability, benefits, eligibility, and pricing
+      vary by state, carrier, and individual circumstances.
+      Health Accident Life is not affiliated with or endorsed
+      by the U.S. government, the federal Medicare program,
+      Healthcare.gov, or any state-based Marketplace.
+    </p>
+
+    <p>© 2026 Health Accident Life. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
