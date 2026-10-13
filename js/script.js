@@ -221,9 +221,7 @@ function validateFinalSubmit(event) {
   const fullName = document.getElementById("fullName");
   const phoneNumber = document.getElementById("phoneNumber");
   const emailAddress = document.getElementById("emailAddress");
-  const consent = document.querySelector(
-    'input[name="tcpa_consent"]'
-  );
+  
 
   const finalStep = getCurrentStepElement();
 
@@ -262,14 +260,7 @@ function validateFinalSubmit(event) {
     return;
   }
 
-  if (!consent || !consent.checked) {
-    event.preventDefault();
-
-    showStepError(
-      finalStep,
-      "Please check the consent box before submitting."
-    );
-  }
+ 
 }
 
 if (nextButton) {
