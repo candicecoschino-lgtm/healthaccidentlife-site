@@ -2256,5 +2256,16 @@ select:hover {
     height: auto;
   }
 }
+/* Health Accident Life footer logo */
 
+.footer-logo {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  padding: 14px 18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
   
