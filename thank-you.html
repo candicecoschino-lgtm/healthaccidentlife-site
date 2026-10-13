@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +9,189 @@
 
   <meta
     name="description"
-    content="Thank you for requesting a free coverage review from Health Accident Life."
+    content="Your coverage review request has been received by Health Accident Life."
   />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .thank-you-section {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      background: linear-gradient(
+        145deg,
+        #001f3f 0%,
+        #073a68 65%,
+        #0074d9 100%
+      );
+    }
+
+    .thank-you-card {
+      width: 100%;
+      max-width: 650px;
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 48px 40px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+    }
+
+    .thank-you-logo {
+      display: block;
+      width: min(100%, 310px);
+      height: auto;
+      margin: 0 auto 32px;
+      object-fit: contain;
+    }
+
+    .success-icon {
+      width: 74px;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      background: #eaf5ff;
+      color: #0074d9;
+      border-radius: 50%;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .thank-you-card h1 {
+      color: #001f3f;
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .thank-you-description {
+      color: #5f6368;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .next-steps-box {
+      background: #f0f7ff;
+      border: 1px solid #d6eaff;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 30px;
+    }
+
+    .next-steps-box h2 {
+      color: #001f3f;
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+
+    .next-steps-box p {
+      color: #394b61;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .thank-you-card .home-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 32px;
+      background: #0074d9;
+      color: #ffffff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: background 0.2s ease;
+    }
+
+    .thank-you-card .home-button:hover {
+      background: #005fb3;
+      color: #ffffff;
+    }
+
+    .thank-you-disclaimer {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #667085;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .thank-you-section {
+        padding: 24px 16px;
+      }
+
+      .thank-you-card {
+        padding: 36px 22px;
+        border-radius: 18px;
+      }
+
+      .thank-you-logo {
+        width: min(100%, 260px);
+      }
+    }
+  </style>
 </head>
 
 <body>
+
   <main class="thank-you-section">
+
     <section class="thank-you-card">
-      <img src="images/logo.png" alt="Health Accident Life logo" />
 
-      <h1>Your request was received.</h1>
+      <img
+        src="/images/health-accident-life-logo.png"
+        alt="Health Accident Life"
+        class="thank-you-logo"
+      />
 
-      <p>
-        Thank you for requesting a free coverage review. A licensed insurance advisor will review your information and reach out to discuss available options.
+      <div class="success-icon" aria-hidden="true">
+        &#10003;
+      </div>
+
+      <h1>Your request was received!</h1>
+
+      <p class="thank-you-description">
+        Thank you for choosing Health Accident Life.
+        We've received your coverage review request
+        and will review the information you provided.
       </p>
 
-      <p>
-        Product availability, eligibility, and benefits vary by state, carrier, and individual circumstances.
+      <div class="next-steps-box">
+
+        <h2>What happens next?</h2>
+
+        <p>
+          We'll reach out using the contact information
+          you provided to discuss your insurance needs,
+          answer questions, and help you explore
+          your coverage options.
+        </p>
+
+      </div>
+
+      <a href="/" class="home-button">
+        Back to Home &rarr;
+      </a>
+
+      <p class="thank-you-disclaimer">
+        Product availability, eligibility, benefits,
+        and pricing vary by state, carrier, and
+        individual circumstances.
+        Submission of a coverage review request
+        does not guarantee enrollment or coverage.
       </p>
 
-      <a href="index.html" class="primary-button">Back to Home</a>
     </section>
+
   </main>
+
 </body>
 </html>
