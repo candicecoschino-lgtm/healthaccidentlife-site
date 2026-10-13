@@ -93,7 +93,7 @@ select {
 }
 
 .site-logo {
-  width: 260px;
+  width: 340px;
   max-width: 100%;
   height: auto;
   display: block;
@@ -2249,5 +2249,12 @@ select:hover {
 
 }
 
+@media (max-width: 768px) {
+  .site-logo {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
   
