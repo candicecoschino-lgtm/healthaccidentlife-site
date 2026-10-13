@@ -93,8 +93,11 @@ select {
 }
 
 .site-logo {
-  width: 190px;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .main-nav {
